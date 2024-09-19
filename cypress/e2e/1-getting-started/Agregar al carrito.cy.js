@@ -4,24 +4,23 @@ describe('Agregar al carrito', () => {
 
         //Ingreso de nombre de usuario en el Log In
         cy.get('#user-name').click()
-            //.wait(1000)
+            .wait(1000)
             .type('standard_user')
 
         //Ingreso de la Contraseña del usuario en el Log In
         cy.get('#password').click()
-            //.wait(1000)
+            .wait(2000)
             .type('secret_sauce')
 
         // Hacer click en el boton de Login
         cy.get('#login-button').click()
-            .wait(1000)
+            .wait(2000)
 
         // Hacer click en el boton Add to Cart
         cy.get('#add-to-cart-sauce-labs-backpack').click()
-            .wait(1000)
+            .wait(2000)
 
         //Assertion
-        cy.get('#shopping_cart_container > a').should('be', 1)
-        to.equal(1)
+        cy.get('#remove-sauce-labs-backpack').should('have.text', 'Remove')
     })
 })
