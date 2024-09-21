@@ -1,7 +1,7 @@
 # Proyecto-Automatizacion-1
 Este programa esta creado para probar de forma automatizada las principales funcionalidades de la pagina https://www.saucedemo.com/ como lo es el probar el Login, Logout, Agregar articulos al carrito, eliminar productos y hacer checkout de los productos agregadados. Este programa realiza un paso a paso de como se usaria el programa para asi poder validar que se tenga un funcionamiento correcto
 
-##Desarrolladores
+##Desarrolladores 
 
 Brandon Ramirez
 Arturo Romero
