@@ -1,16 +1,18 @@
 {
   "name": "cypress_project",
   "version": "1.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "test": "vitest --coverage",
-    "cy:open": "cypress open",
-    "cy:test": "cypress run"
-  },
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.2",
     "cypress": "^13.14.2",
-    "typescript": "*"
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "scripts": {
+    "runner": "cypress open",
+    "Agregar": "cypress run --spec \"cypress/e2e/1-getting-started/Agregar al carrito.cy.js\" --browser chrome --headed",
+    "checkout": "cypress run --spec \"cypress/e2e/1-getting-started/Checkout y Ver Orden.cy.js\" --browser chrome --headed",
+    "eliminar": "cypress run --spec \"cypress/e2e/1-getting-started/Eliminar productos.cy.js\" --browser chrome --headed",
+    "login": "cypress run --spec \"cypress/e2e/1-getting-started/LogIn.cy.js\" --browser chrome --headed",
+    "failed": "cypress run --spec \"cypress/e2e/1-getting-started/LogIn Failed.cy.js\" --browser chrome --headed",
+    "LogOut": "cypress run --spec \"cypress/e2e/1-getting-started/LogOut.cy.js\" --browser chrome --headed"
   }
 }
